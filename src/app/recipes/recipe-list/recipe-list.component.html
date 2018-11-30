@@ -1,0 +1,11 @@
+<div class="row justify-content-between">
+  <div class="col-12">
+    <div class="list-group list-group-flush">
+      <app-recipe-item *ngFor="let recipe of recipes" [recipe]="recipe" (recipeSelected)="onRecipeSelected(recipe)"></app-recipe-item>
+    </div>
+    <hr>
+    <div class="recipe-actions" style="text-align: right">
+      <button class="btn btn-success">New Recipe</button>
+    </div>
+  </div>
+</div>

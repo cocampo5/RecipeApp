@@ -1,0 +1,20 @@
+<div class="recipe-detail">
+  <div class="card" style="">
+    <img class="card-img-top" src="{{currentRecipe.imgUrl}}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{currentRecipe.name}}</h5>
+      <p class="card-text">{{currentRecipe.description}}</p>
+      <div>Ingredients</div>
+      <div class="dropdown" appDropdown>
+        <button class="btn btn-primary" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="oi oi-cog"></span>
+        </button>
+        <div class="dropdown-menu" appDropdown aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Add Ingredients</a>
+          <a class="dropdown-item" href="#">Edit Recipe</a>
+          <a class="dropdown-item" href="#">Delete Recipe</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

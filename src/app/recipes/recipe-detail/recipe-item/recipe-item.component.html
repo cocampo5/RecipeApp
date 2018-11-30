@@ -1,0 +1,11 @@
+<a (click)="onRecipeSelected(recipe)" href="#" class="list-group-item list-group-item-action">
+  <div class="d-flex justify-content-between align-items-center">
+    <div class="recipe-info" style="width: 80%;">
+      <h4 class="">{{recipe.name}}</h4>
+      <div class="" style="word-wrap: break-word">{{recipe.description}}</div>
+    </div>
+    <span class="recipe-img">
+            <img [src]="recipe.imgUrl" [alt]="recipe.name" style="max-width: 70px">
+          </span>
+  </div>
+</a>
