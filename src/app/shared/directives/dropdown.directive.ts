@@ -8,9 +8,9 @@ export class DropdownDirective {
 
   @HostListener('click') toggleOpen() {
     if (!this.isOpen) {
-      this.renderer.addClass(this.elRef.nativeElement.children[1], 'show');
+      this.renderer.addClass(this.elRef.nativeElement.getElementsByClassName('dropdown-menu')[0], 'show');
     } else {
-      this.renderer.removeClass(this.elRef.nativeElement.children[1], 'show');
+      this.renderer.removeClass(this.elRef.nativeElement.getElementsByClassName('dropdown-menu')[0], 'show');
     }
     this.isOpen = !this.isOpen;
   }
