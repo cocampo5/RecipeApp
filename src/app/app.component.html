@@ -1,11 +1,10 @@
 <!-- HEADER COMPONENT -->
-<app-header (featureSelected)="onNavigate($event)"></app-header>
+<app-header></app-header>
 
 <div class="container" style="margin-top: 20px">
   <div class="row">
     <div class="col-12">
-      <app-recipes *ngIf="loadedNav === 'recipe'"></app-recipes>
-      <app-shopping-list *ngIf="loadedNav === 'recipeList'"></app-shopping-list>
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>

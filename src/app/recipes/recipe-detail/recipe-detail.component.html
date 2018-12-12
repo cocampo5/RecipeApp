@@ -1,4 +1,5 @@
 <div class="recipe-detail">
+  <!--<router-outlet></router-outlet>-->
   <div class="card" style="">
     <img class="card-img-top" src="{{currentRecipe.imgUrl}}" alt="Card image cap">
     <div class="card-body">
@@ -16,9 +17,9 @@
           <span class="oi oi-cog"></span>
         </button>
         <div class="dropdown-menu" appDropdown aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#" (click)="onAddToList()" style="cursor: pointer">Add Ingredients</a>
-          <a class="dropdown-item" href="#">Edit Recipe</a>
-          <a class="dropdown-item" href="#">Delete Recipe</a>
+          <a class="dropdown-item" (click)="onAddToList()" style="cursor: pointer">Add Ingredients</a>
+          <a class="dropdown-item" style="cursor: pointer" [routerLink]="['./edit']">Edit Recipe</a>
+          <a class="dropdown-item" style="cursor: pointer">Delete Recipe</a>
         </div>
       </div>
     </div>
